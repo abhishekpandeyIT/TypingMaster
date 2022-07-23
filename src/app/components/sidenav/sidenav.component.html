@@ -1,0 +1,9 @@
+<div class="side-nav-content ">
+    <ul class="nav-list ">
+        <li class="nav-list-item " *ngFor="let navItems of navigationList">
+            <a routerLink="{{navItems.path}}" routerLinkActive="link-active">
+                {{navItems.name|titlecase}}
+            </a>
+        </li>
+    </ul>
+</div>
